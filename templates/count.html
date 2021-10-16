@@ -1,0 +1,11 @@
+<h1>You have entered {{ count }} words</h1>
+<a href = "{% url 'home' %}"> Home </a>
+<h3>Your entered text :</h3>
+<h4>{{ text }}</h4>
+<h3>Word List :</h3>
+{% for word,counttotal in worddict %}
+
+{{ word }} ---> {{ counttotal }}
+<br />
+
+{% endfor %}
